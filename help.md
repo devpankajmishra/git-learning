@@ -35,10 +35,14 @@ unstageing a staging file
 \
 unstageing all staging file
 
-5=> git commit -m "added index and style file"
+5.1=> git commit -m "added index and style file"
 \
 -m ---- add a meaningful message
 2 file changed, 12 insertions(+) ----- total no of code added/updated
+
+5.2=> git commit --amend -m "added index.htm and style.css file"
+\
+it will override the existing commit message
 
 <!-- NOTE log (NORMAL AND CONDENSED) -->
 
@@ -192,3 +196,15 @@ origin ---- repoUrl and master ---- master branch
 26=> git push origin remote-branch-1
 \
 code pushed to new branch before merge with master
+
+<!-- END -->
+
+<!-- NOTE NEW Commands -->
+
+27.1=> git restore index.js
+\
+it discard the changes of a file(unstaged)
+
+27.2=> git restore .
+\
+it discard the changes of all files(unstaged)
