@@ -226,3 +226,15 @@ making the alias of the url as originSSH
 28.2=> git branch -M main
 \
 rename branch (master to main)
+
+28.3=> git push -u originSSH main
+\
+BEFORE SSH key
+-- ERR ERROR: Permission to devpankajmishra/git-learning.git denied to pankajmishra-dev.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+\
+AFTER SSH KEY (generated/added to GITHUB)
+-- We can push. 😎
