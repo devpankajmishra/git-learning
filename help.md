@@ -98,9 +98,13 @@ it removed the commits changes. we actually lost all progress after about point 
 
 <!-- NOTE  create Brances and merge with master branch  -->
 
-12=> git branch feature-1
+12.1=> git branch feature-1
 \
 it creates a new branch name as feature-1
+
+12.2=> git branch -M feature-one
+\
+it rename the branch feature-1 to feature-one
 
 13=> git branch -a
 \
@@ -179,10 +183,14 @@ To https://github.com/devpankajmishra/git-ninja.git
 \
 -- NOTE here making alias of this long url as origin.
 
-23=> git push origin master
+23.1=> git push origin master
 \
 origin ---- alias of repo url
 master ---- branch
+
+23.2=> git push -u origin master
+\
+do the same as above
 
 24=> git remote -v
 \
@@ -208,3 +216,13 @@ it discard the changes of a file(unstaged)
 27.2=> git restore .
 \
 it discard the changes of all files(unstaged)
+
+<!-- PART FOR SSH (git clone) -->
+
+28.1=> git remote add originSSH git@github.com:devpankajmishra/git-learning.git
+\
+making the alias of the url as originSSH
+
+28.2=> git branch -M main
+\
+rename branch (master to main)
