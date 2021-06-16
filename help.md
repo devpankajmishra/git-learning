@@ -238,3 +238,4 @@ and the repository exists.
 \
 AFTER SSH KEY (generated/added to GITHUB)
 -- We can push. 😎
+Once we successfully push to github then we can write "git push" thats it.
