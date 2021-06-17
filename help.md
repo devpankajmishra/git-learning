@@ -255,3 +255,7 @@ create a file, and after insert press ESC => : => wq
 29.2=> cat feature-1.js
 \
 to read file
+
+29.3=> q!
+\
+quit without edit
