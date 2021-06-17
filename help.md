@@ -106,12 +106,16 @@ it creates a new branch name as feature-1
 \
 it rename the branch feature-1 to feature-one
 
-13=> git branch -a
+13.1=> git branch -a
 \
 it show all availabe branches
 feature-1
 
 - master
+
+  13.2=> git branch -r
+  \
+  it show only remote branches
 
 14=> git checkout feature-1
 \
@@ -128,10 +132,14 @@ error: ERR The branch 'feature-1' is not fully merged.
 \
 Deleted branch feature-1 (was 8885aaf).
 
-17=> git checkout -b feature-1
+17.1=> git checkout -b feature-1
 \
 it create a branch and chekout.
 Switched to a new branch 'feature-1'
+
+17.2=> git checkout -
+\
+it toggle to previous branch if any
 
 18.1=> git merge feature-1
 \
@@ -239,3 +247,11 @@ and the repository exists.
 AFTER SSH KEY (generated/added to GITHUB)
 -- We can push. 😎
 Once we successfully push to github then we can write "git push" thats it.
+
+29.1=> vi feature-1.js
+\
+create a file, and after insert press ESC => : => wq
+
+29.2=> cat feature-1.js
+\
+to read file
